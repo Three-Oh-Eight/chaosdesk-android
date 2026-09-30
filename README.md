@@ -17,11 +17,25 @@ No ChaosDesk credential is ever shipped inside the APK. What the library does is
 - `minSdk` 31, `compileSdk` 36
 - Kotlin 2.1, coroutines
 
-## Install
+## Installation
+
+The library is published via [JitPack](https://jitpack.io/#Three-Oh-Eight/chaosdesk-android). Add the JitPack repository in `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+}
+```
+
+Then add the dependency to your app module:
 
 ```kotlin
 dependencies {
-    implementation("eu.chaosdesk:chaosdesk-android:1.0.0")
+    implementation("com.github.Three-Oh-Eight:chaosdesk-android:1.0.0")
 }
 ```
 
